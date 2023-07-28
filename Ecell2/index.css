@@ -1,0 +1,521 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.frame1 {
+    width: 100%;
+    padding-bottom: 100px;
+    background: radial-gradient(163.69% 141.42% at 100.00% 100.00%, #120E3D 0%, #000 100%);
+}
+
+.rec1 {
+    background-color: black;
+    width: 100%;
+    height: 50px;
+}
+textarea{
+    margin-top: 10px;
+ background: rgba(245, 245, 245, 1);
+ overflow: hidden;
+ padding: 5px;
+ border: none;
+}
+.rec2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rec2 > div {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.rec2 > .txt4 {
+    width: 30%;
+}
+
+.txt1 {
+    margin-top: 5%;
+}
+
+.txt2 {
+    margin-top: 3%;
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 5rem;
+    color: rgba(0, 224, 255, 1);
+}
+
+.txt2 > h1 {
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 5rem;
+    color: rgba(0, 224, 255, 1);
+}
+
+.txt3 {
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 5rem;
+}
+
+.txt4 {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin-top: 3%;
+}
+
+.txt4b {
+    margin-left: auto;
+}
+
+.txt4a {
+    margin-right: auto;
+}
+
+.txt5 {
+    margin-top: 6%;
+   
+}
+
+.txt5a {
+    background-color: white;
+    color: black;
+    width: 20%;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (max-width: 768px) {
+    .rec2 > div,
+    .txt4 {
+        width: 100%;
+    }
+
+    .txt4 {
+        font-size: 14px;
+    }
+
+    
+}
+.txt2 {
+    font-size: 5vw;
+}
+
+.txt3 {
+    font-size: 4vw;
+    color: white;
+}
+.txt1{
+    font-size: 2vw;
+    color: white;
+}
+
+@media (max-width: 480px) {
+    .txt2 {
+        font-size: 1.8rem;
+    }
+
+    .txt3 {
+        font-size: 2rem;
+        color: white;
+    }
+    .txt1{
+        font-size: 0.5rem;
+        color: white;
+    }
+    .txt4>div>svg{
+        height: 5px;
+    }
+}
+
+
+.about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.about>hr{
+    margin-top: 5%;
+    width: 30%;
+    background:blue;
+    height: 2px;
+}
+
+.about>h3{
+    color: black;
+    margin-top: 4%;
+}
+
+.aboutpar{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+p{
+    color: black;
+    padding: 4px;
+    text-align: center;
+    margin-top: 4%;
+    font-size: 2vw;
+}
+
+.opper{
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(243, 243, 243);
+    padding-bottom: 5%;
+    padding-top: 50px;
+}
+
+h3{
+    color: black;
+    text-align: center;
+}
+/* 
+.grid{
+    margin-top: 10%;
+    width: 90%;
+    display: grid;
+    row-gap: 5%; 
+     column-gap: 3%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid>div{
+     width: 100%;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 1px black;
+}
+
+.grid>.card>{
+    width: 100%;
+    
+}
+
+.grid>.card>.carda{
+    width: 75px;
+    padding-bottom: 75px;
+    border-radius: 50%;
+    background: radial-gradient(135.11% 134.23% at -0.00% 2.36%, #00E0FF 0%, #0044F2 100%);
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h4{
+    color: black;
+    text-align: center;
+    margin-top: 5%;
+}
+
+@media (max-width: 768px) {
+   .grid{
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+   }
+}
+
+@media (max-width: 450px) {
+    .grid{
+     grid-template-columns: 1fr ;
+    }
+ }
+
+.form{
+    background: radial-gradient(135.11% 134.23% at -0.00% 2.36%, #00E0FF 0%, #0044F2 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.formcontent{
+display: flex;
+flex-direction: column;
+background-color: white;
+padding:50px;
+border-radius: 5px;
+}
+
+input{
+   height: 30px;
+   margin-top: 10px;
+   background: rgba(245, 245, 245, 1);
+   border: none;
+   padding: 5px;
+   color: black;
+} */
+.grid {
+    margin-top: 10%;
+    width: 90%;
+    display: grid;
+    row-gap: 5%;
+    column-gap: 3%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid>div {
+    width: 100%;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 1px 1px 5px black; /* Fixing the box-shadow syntax */
+}
+
+.grid>.card {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.grid>.card>.carda {
+    width: 75px;
+    height: 75px;
+    
+    border-radius: 50%;
+    background: radial-gradient(135.11% 134.23% at -0.00% 2.36%, #00E0FF 0%, #0044F2 100%);
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h4 {
+    color: black;
+    text-align: center;
+    margin-top: 5%;
+}
+
+
+
+.form {
+    background: radial-gradient(135.11% 134.23% at -0.00% 2.36%, #00E0FF 0%, #0044F2 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: 30px; /* Add some margin to create space between the grid and form */
+}
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        height: auto; /* Change from fit-content to auto to prevent overlap */
+    }
+    .form{
+        margin-top: 100px;
+    }
+    .opper{
+        background-color: white;
+    }
+}
+
+@media (max-width: 450px) {
+    .grid {
+        grid-template-columns: 1fr;
+        background-color: white;
+    }
+    .form{
+        margin-top: 550px;
+    }
+    .opper{
+        background-color: white;
+    }
+    p{
+        font-size: 2vw;
+        padding: 2px;
+    }
+}
+
+.formcontent {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 50px;
+    border-radius: 5px;
+}
+
+input {
+    height: 30px;
+    margin-top: 10px;
+    background: rgba(245, 245, 245, 1);
+    border: none;
+    padding: 5px;
+    color: black;
+}
+
+#submit{
+    background-color: blue;
+}
+
+  @media (max-width: 450px) {
+    .formcontent input{
+        width: 100%;
+
+    }
+ }
+
+ .footer{
+   background: #0044F2 ;
+ }
+
+.footer>h1{
+    color: black;
+}
+
+.footer1{
+    display: flex;
+    width: 100%;
+    padding-top: 5%;
+    justify-content: center;
+    overflow-x: hidden;
+    background-color: white;
+    border-radius: 40px 40px 0 0;
+}
+
+.footer1b{
+   width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer1a>h3{
+    font-size: 2vw;
+    text-align: left;
+    color: #0044F2;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+.footer1a{
+    margin-right: auto;
+    font-size: 2vw;
+}
+
+.footer1b>input{
+    height: 40px;
+    display: flex;
+    width:100%;
+    font-size: 2vw;
+}
+
+#emailin{
+    width: 70%;
+    height: 40px;
+    padding-left: 30px;
+}
+
+#submitin{
+    width: 30%;
+    height: 50px;
+   text-align: center;
+    background: linear-gradient(270deg, #00E0FF 0%, #0044F2 100%);
+}
+
+.xx{
+    display: flex;
+    width: 80%;
+}
+
+.foot{
+    padding: 6rem;
+}
+table{
+    border-spacing: 40px ;
+    width: 30%;
+}
+tr,td{
+    width: 30%;
+    font-size: 1vw;
+}
+.contacts{
+    border: 1px 0 0 0 solid blue;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.individual{
+    display: flex;
+   width: 100%;
+   justify-content: space-between;
+}
+.contactname{
+    width: 30%;
+}
+.individual>p{
+    font-size: 1.2vw;
+}
+.s2{
+    display: flex;
+    flex-direction: column;
+    width: 39%;
+    
+}
+.s2>.s1{
+    width: 100%;
+    display: flex;
+    margin-top: 5px;
+  
+}
+.s2>div>p{
+    font-size: 1.2vw;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    margin-left: 5px;
+    
+}
+.social{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    margin-left: auto;
+}
+
+@media (max-width: 450px) {
+    .social{
+        margin-top: 5px;
+    }
+    .foot{
+        padding: 1rem;
+    }
+    .footer1a{
+        margin-top: 20px;
+    }
+ }
